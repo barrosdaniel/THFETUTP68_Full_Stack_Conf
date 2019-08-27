@@ -283,15 +283,22 @@
   <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header bg-dark text-white">
           <h5 class="modal-title" id="exampleModalLabel">Register for Full Stack Conf</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+            <span aria-hidden="true" class="text-white">&times;</span>
           </button>
         </div>
         <div class="modal-body">
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Hurry!</strong> Early-bird registration ends in 2 days.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
           <!-- Registration form -->
           <form>
+            <!-- Basic Info -->
             <h5 class="mb-4">Basic Info</h5>
             <div class="form-group">
               <label for="name">Name:</label>
@@ -304,7 +311,7 @@
             </div>
             <div class="form-group">
               <label for="role">Job Role:</label>
-              <select class="form-control" id="role">
+              <select class="custom-select form-control" id="role">
                 <option value="full stack js developer">Full Stack JavaScript Developer</option>
                 <option value="front end developer">Front End Developer</option>
                 <option value="back end developer">Back End Developer</option>
@@ -314,6 +321,44 @@
               </select>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
+
+            <hr class="my-4">
+
+            <!-- Topics -->
+            <h5 class="mb-4">Which Topics Interest You Most</h5>
+
+            <div class="form-check mb-2">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="javaScriptFrameworks">
+                <label class="custom-control-label" for="javaScriptFrameworks">JavaScript Frameworks</label>
+              </div>
+            </div>
+            <div class="form-check mb-2">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="javaScriptLibraries">
+                <label class="custom-control-label" for="javaScriptLibraries">JavaScript Libraries</label>
+              </div>
+            </div>
+            <div class="form-check mb-2">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="nodeJS">
+                <label class="custom-control-label" for="nodeJS">Node.JS</label>
+              </div>
+            </div>
+            <div class="form-check mb-2">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="buildTools">
+                <label class="custom-control-label" for="buildTools">Build Tools</label>
+              </div>
+            </div>
+            <div class="form-check mb-2">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="es2015">
+                <label class="custom-control-label" for="es2015">ES2015</label>
+              </div>
+            </div>
+
+
           </form>
           <!-- Registration form ends -->
         </div>
