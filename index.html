@@ -292,6 +292,7 @@
         <div class="modal-body">
           <!-- Registration form -->
           <form>
+            <h5 class="mb-4">Basic Info</h5>
             <div class="form-group">
               <label for="name">Name:</label>
               <input type="text" class="form-control" id="name">
@@ -301,9 +302,16 @@
               <input type="email" class="form-control" id="email">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <div class="form-group">
+              <label for="role">Job Role:</label>
+              <select class="form-control" id="role">
+                <option value="full stack js developer">Full Stack JavaScript Developer</option>
+                <option value="front end developer">Front End Developer</option>
+                <option value="back end developer">Back End Developer</option>
+                <option value="designer">Designer</option>
+                <option value="devops">DevOps</option>
+                <option value="student">Student</option>
+              </select>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
